@@ -3,7 +3,6 @@ type Operation = "add" | "replace" | "remove";
 
 export function diffApply<T>(
   oldValue: T,
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   diffs: { op: Operation; path: any[]; value: any }[],
 ): T
 
